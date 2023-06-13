@@ -30,4 +30,28 @@ datos_[0-9].csv
 - nos vamos al ultimos y damo shft y clic
 - luego clic izquierod y elimmar lines
 ## extraer informacion desde un zip
+1. Primero abrimos buscamos donde esta el archivo zip
+2. le damos en add ( agreagamos el enlace o la direccion donde se encuentra el archivo)
+3. buscmaos n text file input y lo abrimos
+4. nos vamos a content 
+5. cambiamos el separador a una coma ,
+6. cambiamos la compresion a zip
+7. cambiamos el format a mixed
+8. nos vamos a fields y ponemos los filas
+9. y le damos preview rows
+## extraer infromacion desde un xml
+- buscamos el archivo get data from XML
+- buscamos donde esta el archivo xml
+- le damos en add
+- ponemos en loopxpath (/dataset/record)
+- nos vamos a fields 
+- get fields
+- previews fields
+- y ok
+## extraer informacion desde un json
+- buscamos en json input
+- buscamos donde esta el archivo json
+- luego nos vamos a fields
+## realizar un etl ejemplo practico
+
 
