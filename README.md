@@ -107,5 +107,5 @@ datos_[0-9].csv
 - nos vamos a databases fields
 - get fields
 - ejecutamos todo y observamos en la base de datos sqlserver
-- 
+- ![Visualizacio ](/src/todoetl.jpg)
 
