@@ -53,5 +53,59 @@ datos_[0-9].csv
 - buscamos donde esta el archivo json
 - luego nos vamos a fields
 ## realizar un etl ejemplo practico
-
+- buscamos donde esta el archivo csv
+- buscamos en pentaho el archivo csv file input
+- cambiamos el delimitador por input
+- le datos en get files
+- luego en preview
+### cambiamos un fila "rows"
+- buscamos en pentaho select values
+- csv file input lo conectamos con select values
+- get fields to selectd
+- cambiamos el row sexo a genero
+- en select values el fieldname ponemos sexo y en rename to genero_id
+- selccionamos todo y run
+### cambiar destro de los rows
+- cambiar de male y famele a 1 y 2
+- buscamos en pentaho replace in string
+- luego conectamos select values con replace string
+- abrimos
+- in strinf field ponemos el campo genero_id
+- search Male
+- Replace with le damos el valor de 1
+- y en whole word le damos en Y o yes
+- y ok
+- y de igual manera par female y non-bnary
+### CAMBIAR EL NOMBRE EN TODO MAYUSCULA
+- buscmos string operation
+- lo unimos o enlazamos con replace in string
+- abrimos
+- in stream fields nombre
+- lower/upper ponemos upper
+- en remove special character carriage return
+- ok
+### HACER QUE EL CAMPO ID SIEMPRE SEA UNICO NO DUPLICAODS
+- buscmaos en pentaho unique rows
+- lo unimos con el anterior
+- fieldname id
+- ignore case le damos en yes o y
+- ok
+### cambio de tipo de dato varchar a integer
+- esro hacemos porque la base de datos esta con integer y en el etl esta con varchar
+- esccogemos en pentaho select values
+- entramos
+- fieldname genero_id
+- type integer
+- ok
+### subir todo el etl a la base de datos
+- table output
+- nos conectamos a la base de datos sql server
+- podemosen target schema dbo
+- target table personas
+- commit size 100
+- spexify databases tables check
+- nos vamos a databases fields
+- get fields
+- ejecutamos todo y observamos en la base de datos sqlserver
+- 
 
