@@ -154,4 +154,4 @@ datos_[0-9].csv
   
   ´´´
 - ejecutamos con python main.py
-- ![Visualizacio ](/src/2.png)
+- ![datos ](/src/2.png)
