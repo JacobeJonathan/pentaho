@@ -108,4 +108,50 @@ datos_[0-9].csv
 - get fields
 - ejecutamos todo y observamos en la base de datos sqlserver
 - ![Visualizacio ](/src/todoetl.jpg)
+## filtrando rows (filas) y exportar a otro csv
+- primero eescogemos importamos el  archivo csv a pentaho
+- luego enlazamos
+- a split fields
+- separamos es decir si tenemos
+- jonathanjacob@gmail.com
+- agregamos 2 campos
+- campo_1
+- campo_2
+- lo serpara en dos
+- jonathanjacob
+- gmail.com
+- y asi podemos separar en mas rows
+- podemos exportar con microsft excel output
+## sacando los valores unicos y unirlos para que no aya registros repetidos
+- quitamos los duplicados y los unimos en uno solo
+## añadimos id
+- añadimos id con add sequence
+- luego agregamos en select values para ordenar de id hasta telefono
+## ejemplo practico calculator
+- solo ponemos calculator en spoon
+- agregamos una nueva fila
+- calculator
 
+## CREANDO SCRIPT CON PYTHON Y PENTAHO
+- abrimos visual studio code en la carpeta de los archivos excel
+  ´´´py
+      import os
+    import pandas as pd
+    ditectorio = r"C:\Users\jonat\Downloads\trabajopentaho\leermultiplosarchivosCSV"
+    arr = os.listdir(ditectorio)
+    archivos = []
+    for i in arr:
+        if '.csv' in i:
+            archivos.append(i)
+        dfs = []
+    for i in archivos:
+        ar = ditectorio + f"\{i}"
+        df_temp = pd.read_csv(ar)
+        dfs.append(df_temp)
+    
+    result = pd.concat(dfs)
+    print(result)
+  
+  ´´´
+- ejecutamos con python main.py
+- ![Visualizacio ](/src/2.png)
